@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz por Tema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Test</h1>
+
+    <label for="temaSelect">Selecciona un tema:</label>
+    <select id="temaSelect" onchange="cargarXML()">
+        <option value="" selected>-----</option>
+        <option value="preguntas.xml">Java</option>
+        <option value="bbdd.xml">BBDD</option>
+        <!-- Agrega más temas aquí -->
+    </select>
+
+    <button onclick="loadRandomQuestion()">Cargar Pregunta Aleatoria</button>
+
+    <div id="quizContainer"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
